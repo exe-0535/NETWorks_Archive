@@ -4,6 +4,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="720"
 		Width="480" Height="720"
+		MaxHeight="720"
         x:Class="NETWorks.MainWindow"
         Title="NETWorks - pre-alpha">
 	<StackPanel>
@@ -12,25 +13,25 @@
 			<!-- Network card name -->
 			<Grid Grid.Row="0" Background="#636466">
 				<StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5">
-					<Label FontWeight="Medium">Network card name</Label>
+					<Label FontWeight="Medium" Name="networkCard">Network card name</Label>
 				</StackPanel>
 			</Grid>
 			<!-- IPv4 -->
 			<Grid Grid.Row="1" Background="#717272">
 				<StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5">
-					<Label FontWeight="Medium">IPv4</Label>
+					<Label FontWeight="Medium" Name="ipv4">IPv4</Label>
 				</StackPanel>
 			</Grid>
 			<!-- IPv6 -->
 			<Grid Grid.Row="2" Background="#787978">
 				<StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5">
-					<Label FontWeight="Medium">IPv6</Label>
+					<Label FontWeight="Medium" Name="ipv6">IPv6</Label>
 				</StackPanel>
 			</Grid>
 			<!-- Connection Type -->
 			<Grid Grid.Row="3" Background="#7F7F7D">
 				<StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5">
-					<Label FontWeight="Medium">Connection type</Label>
+					<Label FontWeight="Medium" Name="connectionType">Connection type</Label>
 				</StackPanel>
 			</Grid>
 		</Grid>
