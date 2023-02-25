@@ -7,11 +7,36 @@
         x:Class="NETWorks.MainWindow"
         Title="NETWorks - pre-alpha">
 	<StackPanel>
-		<Grid Background="Orange" Height="150" ColumnDefinitions="Auto, Auto">
-			<Rectangle Fill="Aqua" Width="240">
-			</Rectangle>
+		<!-- Header - basic information about current network -->
+		<Grid Background="Orange" Height="150" RowDefinitions="Auto, Auto, Auto, Auto" ColumnDefinitions="Auto, Auto">
+			<!-- Network card name -->
+			<Grid Grid.Row="0" Width="240" Height="37" Background="#636466">
+				<StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5">
+					<Label FontWeight="Medium">Network card name</Label>
+				</StackPanel>
+			</Grid>
+			<!-- IPv4 -->
+			<Grid Grid.Row="1" Background="#717272" Width="240" Height="37.5">
+				<StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5">
+					<Label FontWeight="Medium">IPv4</Label>
+				</StackPanel>
+			</Grid>
+			<!-- IPv6 -->
+			<Grid Grid.Row="2" Background="#787978" Width="240" Height="37">
+				<StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5">
+					<Label FontWeight="Medium">IPv6</Label>
+				</StackPanel>
+			</Grid>
+			<!-- Connection Type -->
+			<Grid Grid.Row="3" Background="#7F7F7D" Width="240" Height="37.5">
+				<StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5">
+					<Label FontWeight="Medium">Connection type</Label>
+				</StackPanel>
+			</Grid>
 		</Grid>
+		<!-- More info about network -->
 		<Grid Background="Red" Height="500"></Grid>
+		<!-- Footer -->
 		<Grid Background="Black" Height="70"></Grid>
 	</StackPanel>
 </Window>
