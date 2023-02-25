@@ -8,27 +8,27 @@
         Title="NETWorks - pre-alpha">
 	<StackPanel>
 		<!-- Header - basic information about current network -->
-		<Grid Background="Orange" Height="150" RowDefinitions="Auto, Auto, Auto, Auto" ColumnDefinitions="Auto, Auto">
+		<Grid Background="Orange" Height="150" RowDefinitions="*, *, *, *" ColumnDefinitions="240, *">
 			<!-- Network card name -->
-			<Grid Grid.Row="0" Width="240" Height="37" Background="#636466">
+			<Grid Grid.Row="0" Background="#636466">
 				<StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5">
 					<Label FontWeight="Medium">Network card name</Label>
 				</StackPanel>
 			</Grid>
 			<!-- IPv4 -->
-			<Grid Grid.Row="1" Background="#717272" Width="240" Height="37.5">
+			<Grid Grid.Row="1" Background="#717272">
 				<StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5">
 					<Label FontWeight="Medium">IPv4</Label>
 				</StackPanel>
 			</Grid>
 			<!-- IPv6 -->
-			<Grid Grid.Row="2" Background="#787978" Width="240" Height="37">
+			<Grid Grid.Row="2" Background="#787978">
 				<StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5">
 					<Label FontWeight="Medium">IPv6</Label>
 				</StackPanel>
 			</Grid>
 			<!-- Connection Type -->
-			<Grid Grid.Row="3" Background="#7F7F7D" Width="240" Height="37.5">
+			<Grid Grid.Row="3" Background="#7F7F7D">
 				<StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5">
 					<Label FontWeight="Medium">Connection type</Label>
 				</StackPanel>
