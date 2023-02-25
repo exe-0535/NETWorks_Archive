@@ -5,5 +5,5 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="NETWorks.MainWindow"
         Title="NETWorks">
-    Welcome to Avalonia!
+	<Button Margin="20" Name="button">ClickMe!</Button>
 </Window>
