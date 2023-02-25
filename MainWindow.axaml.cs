@@ -1,4 +1,5 @@
 using Avalonia.Controls;
+using System.Linq;
 using System.Net;
 using System.Net.NetworkInformation;
 
@@ -13,7 +14,7 @@ namespace NETWorks
             networkCard.Content = getNetworkCardName();
             ipv4.Content = "IPv4: " + getIPv4();
             ipv6.Content = "IPv6: " + getIPv6();
-            connectionType.Content = getConnectionType();
+            connectionType.Content = "Connection: " + getConnectionType();
         }
 
         public string getIPv4()
@@ -52,6 +53,20 @@ namespace NETWorks
 
         public string getConnectionType()
         {
+            NetworkInterfaceType[] connectionTypes = {
+                NetworkInterfaceType.Ethernet,
+                NetworkInterfaceType.Wireless80211,
+                NetworkInterfaceType.Ppp
+            };
+
+            foreach (NetworkInterface ni in NetworkInterface.GetAllNetworkInterfaces())
+            {
+                if (ni.OperationalStatus == OperationalStatus.Up && connectionTypes.Contains(ni.NetworkInterfaceType))
+                {
+                    return ni.NetworkInterfaceType.ToString();
+                }
+            }
+
             return string.Empty;
         }
     
