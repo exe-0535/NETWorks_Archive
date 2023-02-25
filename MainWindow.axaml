@@ -2,8 +2,16 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="720"
+		Width="480" Height="720"
         x:Class="NETWorks.MainWindow"
-        Title="NETWorks">
-	<Button Margin="20" Name="button">ClickMe!</Button>
+        Title="NETWorks - pre-alpha">
+	<StackPanel>
+		<Grid Background="Orange" Height="150" ColumnDefinitions="Auto, Auto">
+			<Rectangle Fill="Aqua" Width="240">
+			</Rectangle>
+		</Grid>
+		<Grid Background="Red" Height="500"></Grid>
+		<Grid Background="Black" Height="70"></Grid>
+	</StackPanel>
 </Window>
