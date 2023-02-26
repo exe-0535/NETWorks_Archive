@@ -1,7 +1,9 @@
 using Avalonia.Controls;
+using System;
 using System.Linq;
 using System.Net;
 using System.Net.NetworkInformation;
+using System.Diagnostics;
 
 namespace NETWorks
 {
@@ -48,7 +50,8 @@ namespace NETWorks
         }
         public string getNetworkCardName()
         {
-            return string.Empty;
+            NetworkInterface[] nics = NetworkInterface.GetAllNetworkInterfaces();
+            return nics[0].Description;
         }
 
         public string getConnectionType()
@@ -69,6 +72,5 @@ namespace NETWorks
 
             return string.Empty;
         }
-    
     }
 }
