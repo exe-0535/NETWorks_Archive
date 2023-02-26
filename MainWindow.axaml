@@ -10,35 +10,35 @@
         Title="NETWorks - pre-alpha">
 	<Grid RowDefinitions="Auto,*">
 		<!-- Header - basic information about current network -->
-		<Grid Grid.Row="0" ColumnDefinitions="2*,2*,3*,Auto" Height="120">
+		<Grid Grid.Row="0" ColumnDefinitions="2*,2*,3*,Auto" Height="100" Background="#212236">
 			<!-- Network card description -->
-			<Grid Grid.Column="0" Background="Red">
+			<Grid Grid.Column="0">
 				<StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-					<Label FontWeight="Bold" FontSize="16">Card Description</Label>
+					<Label Foreground="#FFFFFF" FontWeight="Bold" FontSize="16">Card Description</Label>
 				</StackPanel>
 			</Grid>
 			<!-- Basic network information -->
-			<Grid Grid.Column="1" Background="Orange" RowDefinitions="*,*,*,*">
-				<StackPanel Grid.Row="0" Background="Aqua" VerticalAlignment="Center">
-					<Label>CONNECTION TYPE</Label>
+			<Grid Grid.Column="1" RowDefinitions="*,*,*,*">
+				<StackPanel Grid.Row="0" VerticalAlignment="Center">
+					<Label Foreground="#FFFFFF">CONNECTION TYPE</Label>
 				</StackPanel>
-				<StackPanel Grid.Row="1" Background="Azure" VerticalAlignment="Center">
-					<Label>IPV4</Label>
+				<StackPanel Grid.Row="1" VerticalAlignment="Center">
+					<Label Foreground="#FFFFFF">IPV4</Label>
 				</StackPanel>
-				<StackPanel Grid.Row="2" Background="BlanchedAlmond" VerticalAlignment="Center">
-					<Label>IPV6</Label>
+				<StackPanel Grid.Row="2" VerticalAlignment="Center">
+					<Label Foreground="#FFFFFF">IPV6</Label>
 				</StackPanel>
-				<StackPanel Grid.Row="3" Background="Green" VerticalAlignment="Center">
-					<Label>SIGNAL POWER CHART</Label>
+				<StackPanel Grid.Row="3" VerticalAlignment="Center">
+					<Label Foreground="#FFFFFF">SIGNAL POWER CHART</Label>
 				</StackPanel>
 			</Grid>
 			<!-- Placeholder -->
-			<Rectangle Grid.Column="2" Fill="Yellow"></Rectangle>
+			<Rectangle Grid.Column="2"></Rectangle>
 			<!-- Light/Dark mode -->
-			<Rectangle Grid.Column="3" Fill="Black" Width="100"></Rectangle>
+			<Rectangle Grid.Column="3" Width="100"></Rectangle>
 		</Grid>
 		<!-- Main grid -->
-		<Grid Grid.Row="1" Background="DarkMagenta">
+		<Grid Grid.Row="1" Background="#2D2E40">
 			
 		</Grid>
 	</Grid>
