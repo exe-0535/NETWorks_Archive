@@ -13,10 +13,10 @@ namespace NETWorks
         {
             InitializeComponent();
 
-            networkCard.Content = getNetworkCardName();
+/*            networkCard.Content = getNetworkCardName();
             ipv4.Content = "IPv4: " + getIPv4();
             ipv6.Content = "IPv6: " + getIPv6();
-            connectionType.Content = "Connection: " + getConnectionType();
+            connectionType.Content = "Connection: " + getConnectionType();*/
         }
 
         public string getIPv4()

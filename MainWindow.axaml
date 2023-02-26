@@ -2,43 +2,44 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="720"
-		Width="480" Height="720"
-		MaxHeight="720" MinHeight="720"
-		MaxWidth="480" MinWidth="480"
+        mc:Ignorable="d" d:DesignWidth="960" d:DesignHeight="540"
+		Width="960" Height="540"
+		MaxHeight="1080" MinHeight="540"
+		MaxWidth="1920" MinWidth="960"
         x:Class="NETWorks.MainWindow"
         Title="NETWorks - pre-alpha">
-	<StackPanel>
+	<Grid RowDefinitions="Auto,*">
 		<!-- Header - basic information about current network -->
-		<Grid Background="Orange" Height="150" RowDefinitions="*, *, *, *" ColumnDefinitions="240, *">
-			<!-- Network card name -->
-			<Grid Grid.Row="0" Background="#636466">
-				<StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5">
-					<Label FontWeight="Medium" Name="networkCard">Network card name</Label>
+		<Grid Grid.Row="0" ColumnDefinitions="2*,2*,3*,Auto" Height="120">
+			<!-- Network card description -->
+			<Grid Grid.Column="0" Background="Red">
+				<StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+					<Label FontWeight="Bold" FontSize="16">Card Description</Label>
 				</StackPanel>
 			</Grid>
-			<!-- IPv4 -->
-			<Grid Grid.Row="1" Background="#717272">
-				<StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5">
-					<Label FontWeight="Medium" Name="ipv4">IPv4</Label>
+			<!-- Basic network information -->
+			<Grid Grid.Column="1" Background="Orange" RowDefinitions="*,*,*,*">
+				<StackPanel Grid.Row="0" Background="Aqua" VerticalAlignment="Center">
+					<Label>CONNECTION TYPE</Label>
+				</StackPanel>
+				<StackPanel Grid.Row="1" Background="Azure" VerticalAlignment="Center">
+					<Label>IPV4</Label>
+				</StackPanel>
+				<StackPanel Grid.Row="2" Background="BlanchedAlmond" VerticalAlignment="Center">
+					<Label>IPV6</Label>
+				</StackPanel>
+				<StackPanel Grid.Row="3" Background="Green" VerticalAlignment="Center">
+					<Label>SIGNAL POWER CHART</Label>
 				</StackPanel>
 			</Grid>
-			<!-- IPv6 -->
-			<Grid Grid.Row="2" Background="#787978">
-				<StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5">
-					<Label FontWeight="Medium" Name="ipv6">IPv6</Label>
-				</StackPanel>
-			</Grid>
-			<!-- Connection Type -->
-			<Grid Grid.Row="3" Background="#7F7F7D">
-				<StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5">
-					<Label FontWeight="Medium" Name="connectionType">Connection type</Label>
-				</StackPanel>
-			</Grid>
+			<!-- Placeholder -->
+			<Rectangle Grid.Column="2" Fill="Yellow"></Rectangle>
+			<!-- Light/Dark mode -->
+			<Rectangle Grid.Column="3" Fill="Black" Width="100"></Rectangle>
 		</Grid>
-		<!-- More info about network -->
-		<Grid Background="Red" Height="500"></Grid>
-		<!-- Footer -->
-		<Grid Background="Black" Height="70"></Grid>
-	</StackPanel>
+		<!-- Main grid -->
+		<Grid Grid.Row="1" Background="DarkMagenta">
+			
+		</Grid>
+	</Grid>
 </Window>
