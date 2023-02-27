@@ -35,7 +35,15 @@
 			<!-- Placeholder -->
 			<Rectangle Grid.Column="2"></Rectangle>
 			<!-- Light/Dark mode -->
-			<Rectangle Grid.Column="3" Width="100"></Rectangle>
+			<Grid Grid.Column="3" RowDefinitions="*,*" Width="150">
+				<StackPanel Grid.Row="0" Background="Aqua">
+					<Label>Theme</Label>
+				</StackPanel>
+				<StackPanel Grid.Row="1" Background="White">
+					<Label>Dark</Label>
+					<Label>Light</Label>
+				</StackPanel>
+			</Grid>
 		</Grid>
 		<!-- Main grid -->
 		<Grid Grid.Row="1" Background="#2D2E40">
