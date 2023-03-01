@@ -1,5 +1,6 @@
 using Avalonia;
 using Avalonia.Controls;
+using Avalonia.ReactiveUI;
 using Avalonia.Controls.ApplicationLifetimes;
 using System;
 
@@ -17,6 +18,7 @@ namespace NETWorks
         // Avalonia configuration, don't remove; also used by visual designer.
         public static AppBuilder BuildAvaloniaApp()
             => AppBuilder.Configure<App>()
+                .UseReactiveUI()
                 .UsePlatformDetect()
                 .LogToTrace();
     }

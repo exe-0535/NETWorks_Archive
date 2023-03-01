@@ -6,7 +6,7 @@
 		Width="960" Height="540"
 		MaxHeight="1080" MinHeight="540"
 		MaxWidth="1920" MinWidth="960"
-        x:Class="NETWorks.MainWindow"
+        x:Class="NETWorks.Views.MainWindow"
         Title="NETWorks - pre-alpha">
 	<Grid RowDefinitions="Auto,*">
 		<!-- Header - basic information about current network -->

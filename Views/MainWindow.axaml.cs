@@ -5,18 +5,14 @@ using System.Net;
 using System.Net.NetworkInformation;
 using System.Diagnostics;
 
-namespace NETWorks
+namespace NETWorks.Views
 {
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
-
-/*            networkCard.Content = getNetworkCardName();
-            ipv4.Content = "IPv4: " + getIPv4();
-            ipv6.Content = "IPv6: " + getIPv6();
-            connectionType.Content = "Connection: " + getConnectionType();*/
+            
         }
 
         public string getIPv4()
